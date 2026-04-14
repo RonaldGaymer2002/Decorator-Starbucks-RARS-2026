@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starbucks Bolivia | Cafe | Santa Cruz de la Sierra</title>
+  <meta name="description" content="Es un honor poder ofrecer la experiencia Starbucks en Bolivia, siendo nuestra misión la de inspirar y nutrir el espíritu humano; una persona, una taza y una comunidad a la vez." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <div class="logo-circle">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="siren-logo">
+            <circle cx="100" cy="100" r="98" fill="#00704A"/>
+            <circle cx="100" cy="100" r="88" fill="none" stroke="white" stroke-width="2"/>
+            <text x="100" y="52" text-anchor="middle" fill="white" font-family="Lato" font-size="9" font-weight="700" letter-spacing="3">STARBUCKS COFFEE</text>
+            <!-- Siren face -->
+            <ellipse cx="100" cy="105" rx="32" ry="38" fill="white"/>
+            <circle cx="88" cy="98" r="4" fill="#00704A"/>
+            <circle cx="112" cy="98" r="4" fill="#00704A"/>
+            <path d="M88 112 Q100 122 112 112" stroke="#00704A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <!-- Crown -->
+            <path d="M68 85 L80 68 L100 78 L120 68 L132 85" fill="white" stroke="white" stroke-width="1"/>
+            <!-- Tail fins -->
+            <path d="M68 108 Q55 125 60 148 Q75 140 85 128" fill="white"/>
+            <path d="M132 108 Q145 125 140 148 Q125 140 115 128" fill="white"/>
+            <!-- Stars (dots) around siren -->
+            <circle cx="70" cy="72" r="2.5" fill="white"/>
+            <circle cx="130" cy="72" r="2.5" fill="white"/>
+          </svg>
+        </div>
+        <span class="brand-name">Starbucks Bolivia</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+        <li><a href="#menu" class="nav-link">Menú</a></li>
+        <li><a href="#personalizar" class="nav-link">Personaliza</a></li>
+        <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+        <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Ver carrito">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Bienvenido a</span>
+      <h1 class="hero-title">Starbucks <em>Bolivia</em></h1>
+      <p class="hero-subtitle">Inspirando y nutriendo el espíritu humano,<br>una persona, una taza y una comunidad a la vez.</p>
+      <div class="hero-cta">
+        <a href="#personalizar" class="btn btn-primary">Personaliza tu bebida</a>
+        <a href="#menu" class="btn btn-secondary">Ver Menú</a>
+      </div>
+    </div>
+    <div class="hero-cup-wrapper">
+      <div class="hero-cup">
+        <div class="cup-body">
+          <div class="cup-sleeve"></div>
+          <div class="cup-logo-mini"></div>
+          <div class="liquid-waves">
+            <div class="wave wave-1"></div>
+            <div class="wave wave-2"></div>
+          </div>
+        </div>
+        <div class="cup-lid"></div>
+        <div class="cup-straw"></div>
+        <div class="steam-container">
+          <div class="steam s1"></div>
+          <div class="steam s2"></div>
+          <div class="steam s3"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ========== SEASONAL BANNER ========== -->
+  <section class="seasonal-banner">
+    <div class="seasonal-container">
+      <div class="seasonal-card">
+        <div class="seasonal-icon">🌸</div>
+        <div>
+          <h3>Colección Primavera</h3>
+          <p>Sabores frescos que inspiran</p>
+        </div>
+      </div>
+      <div class="seasonal-card">
+        <div class="seasonal-icon">⭐</div>
+        <div>
+          <h3>Programa de Recompensas</h3>
+          <p>Gana Stars con cada compra</p>
+        </div>
+      </div>
+      <div class="seasonal-card">
+        <div class="seasonal-icon">🌱</div>
+        <div>
+          <h3>Café de Origen</h3>
+          <p>Responsabilidad y sostenibilidad</p>
+        </div>
+      </div>
+      <div class="seasonal-card">
+        <div class="seasonal-icon">🎁</div>
+        <div>
+          <h3>Vasos Reusables</h3>
+          <p>Cuida el planeta con estilo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MENU ========== -->
+  <section class="menu-section" id="menu">
+    <div class="section-header">
+      <span class="section-tag">Nuestro Menú</span>
+      <h2>Descubre Nuestras<br><em>Bebidas Favoritas</em></h2>
+      <p>Elaboradas con los mejores granos de café del mundo</p>
+    </div>
+
+    <div class="menu-filters">
+      <button class="filter-btn active" data-filter="all" id="filter-all">Todos</button>
+      <button class="filter-btn" data-filter="hot" id="filter-hot">☕ Calientes</button>
+      <button class="filter-btn" data-filter="cold" id="filter-cold">🧊 Fríos</button>
+      <button class="filter-btn" data-filter="frappuccino" id="filter-frappuccino">🥤 Frappuccino</button>
+      <button class="filter-btn" data-filter="food" id="filter-food">🥐 Alimentos</button>
+    </div>
+
+    <div class="menu-grid" id="menuGrid">
+      <!-- Cards generated by JS -->
+    </div>
+  </section>
+
+  <!-- ========== PERSONALIZAR / DECORATOR SECTION ========== -->
+  <section class="customizer-section" id="personalizar">
+    <div class="section-header light">
+      <span class="section-tag green">Patrón Decorator</span>
+      <h2>Personaliza tu<br><em>Bebida Perfecta</em></h2>
+      <p>Añade ingredientes y personaliza con el poder del patrón de diseño Decorator</p>
+    </div>
+
+    <div class="customizer-wrapper">
+      <!-- BASE DRINK SELECTOR -->
+      <div class="customizer-panel base-panel">
+        <h3 class="panel-title">
+          <span class="step-badge">1</span>
+          Elige tu Base
+        </h3>
+        <div class="base-options" id="baseOptions">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+
+      <!-- TOPPINGS / DECORATORS -->
+      <div class="customizer-panel addons-panel">
+        <h3 class="panel-title">
+          <span class="step-badge">2</span>
+          Agrega Ingredientes
+        </h3>
+        <div class="addon-categories">
+          <div class="addon-category">
+            <h4 class="category-label">☕ Extras de Café</h4>
+            <div class="addon-list" id="coffeeAddons"></div>
+          </div>
+          <div class="addon-category">
+            <h4 class="category-label">🥛 Lácteos</h4>
+            <div class="addon-list" id="milkAddons"></div>
+          </div>
+          <div class="addon-category">
+            <h4 class="category-label">🍯 Syrups & Dulces</h4>
+            <div class="addon-list" id="syrupAddons"></div>
+          </div>
+          <div class="addon-category">
+            <h4 class="category-label">🌟 Toppings Premium</h4>
+            <div class="addon-list" id="toppingAddons"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LIVE PREVIEW & RECEIPT -->
+      <div class="customizer-panel preview-panel">
+        <h3 class="panel-title">
+          <span class="step-badge">3</span>
+          Tu Creación
+        </h3>
+        <div class="drink-preview" id="drinkPreview">
+          <div class="preview-cup-container">
+            <div class="preview-cup" id="previewCup">
+              <div class="preview-lid" id="previewLid"></div>
+              <div class="preview-body" id="previewBody">
+                <div class="preview-liquid" id="previewLiquid"></div>
+                <div class="preview-foam" id="previewFoam"></div>
+              </div>
+            </div>
+            <div class="preview-badges" id="previewBadges"></div>
+          </div>
+        </div>
+        <div class="decorator-receipt" id="decoratorReceipt">
+          <div class="receipt-header">
+            <span>🎨 Patrón Decorator Activo</span>
+          </div>
+          <div class="receipt-chain" id="receiptChain">
+            <div class="chain-empty">Elige una bebida base para comenzar</div>
+          </div>
+          <div class="receipt-total">
+            <span>Total estimado:</span>
+            <span class="total-price" id="totalPrice">Bs. 0.00</span>
+          </div>
+        </div>
+        <button class="btn btn-primary full-width" id="addToCartBtn">
+          Agregar al carrito
+        </button>
+      </div>
+    </div>
+
+    <!-- DECORATOR PATTERN DIAGRAM -->
+    <div class="pattern-diagram-section">
+      <h3 class="diagram-title">¿Cómo funciona el Patrón Decorator?</h3>
+      <div class="pattern-diagram">
+        <div class="diagram-box interface-box">
+          <div class="box-label">«Interface»</div>
+          <div class="box-name">Beverage</div>
+          <div class="box-methods">
+            <span>+ getDescription(): String</span>
+            <span>+ cost(): Number</span>
+          </div>
+        </div>
+        <div class="diagram-arrow arrow-down">▼</div>
+        <div class="diagram-row">
+          <div class="diagram-box concrete-box">
+            <div class="box-label">Concrete Component</div>
+            <div class="box-name">Espresso</div>
+            <div class="box-methods">
+              <span>+ cost(): 25</span>
+            </div>
+          </div>
+          <div class="diagram-box concrete-box">
+            <div class="box-label">Concrete Component</div>
+            <div class="box-name">Latte</div>
+            <div class="box-methods">
+              <span>+ cost(): 30</span>
+            </div>
+          </div>
+          <div class="diagram-box decorator-box">
+            <div class="box-label">Abstract Decorator</div>
+            <div class="box-name">CondimentDecorator</div>
+            <div class="box-methods">
+              <span>- wraps: Beverage</span>
+              <span>+ getDescription()</span>
+              <span>+ cost()</span>
+            </div>
+          </div>
+        </div>
+        <div class="diagram-arrow arrow-down">▼</div>
+        <div class="diagram-row">
+          <div class="diagram-box addon-box">
+            <div class="box-label">Concrete Decorator</div>
+            <div class="box-name">Milk</div>
+            <div class="box-methods"><span>+ cost(): +5</span></div>
+          </div>
+          <div class="diagram-box addon-box">
+            <div class="box-label">Concrete Decorator</div>
+            <div class="box-name">VanillaSyrup</div>
+            <div class="box-methods"><span>+ cost(): +8</span></div>
+          </div>
+          <div class="diagram-box addon-box">
+            <div class="box-label">Concrete Decorator</div>
+            <div class="box-name">WhippedCream</div>
+            <div class="box-methods"><span>+ cost(): +7</span></div>
+          </div>
+          <div class="diagram-box addon-box">
+            <div class="box-label">Concrete Decorator</div>
+            <div class="box-name">ExtraShot</div>
+            <div class="box-methods"><span>+ cost(): +10</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NOSOTROS ========== -->
+  <section class="about-section" id="nosotros">
+    <div class="about-container">
+      <div class="about-text">
+        <span class="section-tag">Nuestra Historia</span>
+        <h2>Más que una taza<br>de <em>café</em></h2>
+        <p>Desde 1971, Starbucks ha redefinido lo que significa disfrutar de un café. Llegamos a Bolivia con la misión de inspirar y nutrir el espíritu humano.</p>
+        <p>Cada uno de nuestros baristas está entrenado para crear experiencias únicas y memorables. Usamos los mejores granos de café de origen único, cultivados de manera sostenible alrededor del mundo.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">35,000+</span>
+            <span class="stat-label">Tiendas Globales</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">80+</span>
+            <span class="stat-label">Países</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">1971</span>
+            <span class="stat-label">Fundado en Seattle</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="about-img-grid">
+          <div class="about-img-card card-large">
+            <div class="img-placeholder green-dark">
+              <div class="bean-icon">☕</div>
+              <p>Café de Origen</p>
+            </div>
+          </div>
+          <div class="about-img-card card-small">
+            <div class="img-placeholder green-light">
+              <div class="bean-icon">🌿</div>
+              <p>Sostenibilidad</p>
+            </div>
+          </div>
+          <div class="about-img-card card-small">
+            <div class="img-placeholder cream">
+              <div class="bean-icon">🤝</div>
+              <p>Comunidad</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== UBICACION ========== -->
+  <section class="location-section" id="ubicacion">
+    <div class="section-header light">
+      <span class="section-tag green">Encuéntranos</span>
+      <h2>Nuestra <em>Ubicación</em></h2>
+      <p>Visítanos en Santa Cruz de la Sierra, Bolivia</p>
+    </div>
+    <div class="location-container">
+      <div class="location-info">
+        <div class="info-card">
+          <div class="info-icon">📍</div>
+          <div>
+            <h4>Dirección</h4>
+            <p>Av. La Salle, Santa Cruz de la Sierra, Bolivia</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">🕐</div>
+          <div>
+            <h4>Horarios</h4>
+            <p>Lun – Vie: 7:00 AM – 10:00 PM</p>
+            <p>Sáb – Dom: 8:00 AM – 11:00 PM</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">📱</div>
+          <div>
+            <h4>Contáctanos</h4>
+            <p>@StarbucksBolivia</p>
+            <p>info@sbuxbolivia.com</p>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-btn" id="fb-link">f Facebook</a>
+          <a href="#" class="social-btn" id="ig-link">📸 Instagram</a>
+          <a href="#" class="social-btn" id="tw-link">🐦 Twitter</a>
+        </div>
+      </div>
+      <div class="map-placeholder">
+        <div class="map-inner">
+          <div class="map-pin">📍</div>
+          <p>Av. La Salle<br>Santa Cruz de la Sierra</p>
+          <p class="map-note">Bolivia 🇧🇴</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="50" height="50">
+            <circle cx="100" cy="100" r="98" fill="#00704A"/>
+            <circle cx="100" cy="100" r="88" fill="none" stroke="white" stroke-width="2"/>
+            <ellipse cx="100" cy="105" rx="32" ry="38" fill="white"/>
+            <circle cx="88" cy="98" r="4" fill="#00704A"/>
+            <circle cx="112" cy="98" r="4" fill="#00704A"/>
+            <path d="M88 112 Q100 122 112 112" stroke="#00704A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <path d="M68 85 L80 68 L100 78 L120 68 L132 85" fill="white" stroke="white" stroke-width="1"/>
+            <path d="M68 108 Q55 125 60 148 Q75 140 85 128" fill="white"/>
+            <path d="M132 108 Q145 125 140 148 Q125 140 115 128" fill="white"/>
+          </svg>
+        </div>
+        <p>Inspirando y nutriendo el espíritu humano; una persona, una taza y una comunidad a la vez.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navegar</h4>
+        <ul>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#personalizar">Personalizar</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Términos de Uso</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Accesibilidad</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Proyectos</h4>
+        <ul>
+          <li><a href="#">Coffee Traveler</a></li>
+          <li><a href="#">Vasos Reusables</a></li>
+          <li><a href="#">Starbucks Rewards</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Starbucks Bolivia. Todos los derechos reservados. | Implementado con el Patrón de Diseño <strong>Decorator</strong></p>
+    </div>
+  </footer>
+
+  <!-- ========== CART MODAL ========== -->
+  <div class="cart-modal" id="cartModal">
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-drawer">
+      <div class="cart-header">
+        <h3>Tu Pedido</h3>
+        <button class="cart-close" id="cartClose">✕</button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <div class="cart-empty">
+          <span>☕</span>
+          <p>Tu carrito está vacío</p>
+          <a href="#personalizar" class="btn btn-primary small">Personaliza una bebida</a>
+        </div>
+      </div>
+      <div class="cart-footer" id="cartFooter" style="display:none;">
+        <div class="cart-subtotal">
+          <span>Subtotal:</span>
+          <span id="cartSubtotal">Bs. 0.00</span>
+        </div>
+        <button class="btn btn-primary full-width" id="checkoutBtn">Proceder al Pago</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== TOAST NOTIFICATION ========== -->
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
