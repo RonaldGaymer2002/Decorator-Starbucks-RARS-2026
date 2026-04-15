@@ -1185,3 +1185,235 @@ em { font-style: italic; color: var(--green-mid); }
   .diagram-row { flex-direction: column; align-items: center; }
   .seasonal-container { flex-direction: column; align-items: flex-start; gap: 1rem; }
 }
+
+/* ===================================================
+   LOGO REAL — Navbar & Footer
+=================================================== */
+.navbar-logo-img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 50%;
+  display: block;
+  transition: transform var(--transition);
+}
+.navbar-logo-img:hover { transform: rotate(15deg) scale(1.08); }
+
+.footer-logo-img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-bottom: 0.25rem;
+  filter: drop-shadow(0 2px 8px rgba(0,112,74,0.4));
+}
+
+/* ===================================================
+   PROMO BANNER — Verano en modo ON
+=================================================== */
+.promo-banner {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  line-height: 0; /* eliminate gap below img */
+}
+.promo-banner-link {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.promo-banner-link:hover .promo-banner-img {
+  transform: scale(1.02);
+}
+.promo-banner-link:hover .promo-banner-overlay {
+  opacity: 1;
+}
+.promo-banner-img {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.promo-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(30,57,50,0.35);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 2rem 2.5rem;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  line-height: 1.5;
+}
+.promo-badge {
+  background: var(--gold);
+  color: var(--black);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.5px;
+}
+.promo-cta-text {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+/* ===================================================
+   PEDIDOSYA / DELIVERY SECTION
+=================================================== */
+.delivery-section {
+  background: #111;
+  padding: 5rem 2rem;
+}
+.delivery-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+.delivery-text .section-tag { margin-bottom: 1rem; }
+.delivery-text h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  color: var(--white);
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+.delivery-text h2 em { color: #FF3F45; font-style: italic; }
+.delivery-text p {
+  color: rgba(255,255,255,0.65);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+.delivery-text p strong { color: #FF3F45; }
+
+.delivery-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+.delivery-features li {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.feat-icon {
+  width: 32px; height: 32px;
+  background: rgba(255,255,255,0.07);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+/* PedidosYa CTA button */
+.pedidosya-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background: #FF3F45;
+  padding: 0.875rem 2rem 0.875rem 1.5rem;
+  border-radius: var(--radius-full);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all var(--transition);
+  box-shadow: 0 6px 24px rgba(255,63,69,0.4);
+  text-decoration: none;
+}
+.pedidosya-btn:hover {
+  background: #e03135;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(255,63,69,0.5);
+}
+.pedidosya-logo-btn {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 6px;
+  background: white;
+  padding: 3px 6px;
+}
+
+/* Delivery card */
+.delivery-visual { display: flex; justify-content: center; }
+.delivery-card {
+  background: #1c1c1c;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: transform var(--transition);
+}
+.delivery-card:hover { transform: translateY(-6px); }
+.pedidosya-card-img {
+  width: 100%;
+  padding: 2rem 2rem 1.5rem;
+  object-fit: contain;
+  background: #FF3F45;
+  max-height: 130px;
+}
+.delivery-card-info { padding: 1.5rem; }
+.delivery-store {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.delivery-sbux-logo {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  object-fit: contain;
+  background: var(--green-mid);
+  padding: 4px;
+  flex-shrink: 0;
+}
+.delivery-store strong {
+  color: var(--white);
+  font-size: 0.95rem;
+  display: block;
+  margin-bottom: 2px;
+}
+.delivery-store p {
+  color: rgba(255,255,255,0.45);
+  font-size: 0.8rem;
+}
+.delivery-time-row {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.delivery-chip {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.75);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+}
+
+@media (max-width: 768px) {
+  .delivery-container { grid-template-columns: 1fr; gap: 2.5rem; }
+  .promo-banner-img { max-height: 220px; }
+  .promo-banner-overlay { padding: 1rem 1.25rem; }
+}
+

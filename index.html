@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Starbucks Bolivia | Cafe | Santa Cruz de la Sierra</title>
-  <meta name="description" content="Es un honor poder ofrecer la experiencia Starbucks en Bolivia, siendo nuestra misión la de inspirar y nutrir el espíritu humano; una persona, una taza y una comunidad a la vez." />
+  <meta name="description"
+    content="Es un honor poder ofrecer la experiencia Starbucks en Bolivia, siendo nuestra misión la de inspirar y nutrir el espíritu humano; una persona, una taza y una comunidad a la vez." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- ========== NAVBAR ========== -->
@@ -17,24 +22,7 @@
     <div class="nav-container">
       <div class="nav-logo">
         <div class="logo-circle">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="siren-logo">
-            <circle cx="100" cy="100" r="98" fill="#00704A"/>
-            <circle cx="100" cy="100" r="88" fill="none" stroke="white" stroke-width="2"/>
-            <text x="100" y="52" text-anchor="middle" fill="white" font-family="Lato" font-size="9" font-weight="700" letter-spacing="3">STARBUCKS COFFEE</text>
-            <!-- Siren face -->
-            <ellipse cx="100" cy="105" rx="32" ry="38" fill="white"/>
-            <circle cx="88" cy="98" r="4" fill="#00704A"/>
-            <circle cx="112" cy="98" r="4" fill="#00704A"/>
-            <path d="M88 112 Q100 122 112 112" stroke="#00704A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <!-- Crown -->
-            <path d="M68 85 L80 68 L100 78 L120 68 L132 85" fill="white" stroke="white" stroke-width="1"/>
-            <!-- Tail fins -->
-            <path d="M68 108 Q55 125 60 148 Q75 140 85 128" fill="white"/>
-            <path d="M132 108 Q145 125 140 148 Q125 140 115 128" fill="white"/>
-            <!-- Stars (dots) around siren -->
-            <circle cx="70" cy="72" r="2.5" fill="white"/>
-            <circle cx="130" cy="72" r="2.5" fill="white"/>
-          </svg>
+          <img src="img/logo-starbucks.png" alt="Starbucks Logo" class="navbar-logo-img" />
         </div>
         <span class="brand-name">Starbucks Bolivia</span>
       </div>
@@ -48,9 +36,9 @@
       <div class="nav-actions">
         <button class="cart-btn" id="cartBtn" aria-label="Ver carrito">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-            <line x1="3" y1="6" x2="21" y2="6"/>
-            <path d="M16 10a4 4 0 01-8 0"/>
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <path d="M16 10a4 4 0 01-8 0" />
           </svg>
           <span class="cart-count" id="cartCount">0</span>
         </button>
@@ -68,7 +56,8 @@
     <div class="hero-content">
       <span class="hero-eyebrow">Bienvenido a</span>
       <h1 class="hero-title">Starbucks <em>Bolivia</em></h1>
-      <p class="hero-subtitle">Inspirando y nutriendo el espíritu humano,<br>una persona, una taza y una comunidad a la vez.</p>
+      <p class="hero-subtitle">Inspirando y nutriendo el espíritu humano,<br>una persona, una taza y una comunidad a la
+        vez.</p>
       <div class="hero-cta">
         <a href="#personalizar" class="btn btn-primary">Personaliza tu bebida</a>
         <a href="#menu" class="btn btn-secondary">Ver Menú</a>
@@ -131,6 +120,18 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- ========== MARKETING BANNER — VERANO ========== -->
+  <section class="promo-banner" id="promo-verano" aria-label="Promoción Verano">
+    <a href="#menu" class="promo-banner-link" id="promo-verano-link">
+      <img src="img/banner-verano.png" alt="Verano en modo ON — Colección Pistacho Mocha de Starbucks Bolivia"
+        class="promo-banner-img" />
+      <div class="promo-banner-overlay">
+        <span class="promo-badge">🆕 Nuevos Sabores</span>
+        <span class="promo-cta-text">Ver Menú Completo →</span>
+      </div>
+    </a>
   </section>
 
   <!-- ========== MENU ========== -->
@@ -307,8 +308,10 @@
       <div class="about-text">
         <span class="section-tag">Nuestra Historia</span>
         <h2>Más que una taza<br>de <em>café</em></h2>
-        <p>Desde 1971, Starbucks ha redefinido lo que significa disfrutar de un café. Llegamos a Bolivia con la misión de inspirar y nutrir el espíritu humano.</p>
-        <p>Cada uno de nuestros baristas está entrenado para crear experiencias únicas y memorables. Usamos los mejores granos de café de origen único, cultivados de manera sostenible alrededor del mundo.</p>
+        <p>Desde 1971, Starbucks ha redefinido lo que significa disfrutar de un café. Llegamos a Bolivia con la misión
+          de inspirar y nutrir el espíritu humano.</p>
+        <p>Cada uno de nuestros baristas está entrenado para crear experiencias únicas y memorables. Usamos los mejores
+          granos de café de origen único, cultivados de manera sostenible alrededor del mundo.</p>
         <div class="about-stats">
           <div class="stat">
             <span class="stat-number">35,000+</span>
@@ -397,22 +400,53 @@
     </div>
   </section>
 
+  <!-- ========== PEDIDOSYA — DELIVERY ========== -->
+  <section class="delivery-section" id="delivery" aria-label="Pedidos a domicilio">
+    <div class="delivery-container">
+      <div class="delivery-text">
+        <span class="section-tag green">🛵 Delivery</span>
+        <h2>Pide desde<br><em>donde estés</em></h2>
+        <p>Ahora puedes disfrutar tu bebida favorita de Starbucks Bolivia sin salir de casa. Realizamos entregas a
+          través de <strong>PedidosYa</strong> en Santa Cruz de la Sierra.</p>
+        <ul class="delivery-features">
+          <li><span class="feat-icon">⚡</span> Entrega rápida en 30 minutos</li>
+          <li><span class="feat-icon">🌡️</span> Bebida caliente o fría a tu puerta</li>
+          <li><span class="feat-icon">📦</span> Seguimiento en tiempo real</li>
+          <li><span class="feat-icon">💳</span> Pago en efectivo o tarjeta</li>
+        </ul>
+        <a href="https://www.pedidosya.com.bo" target="_blank" rel="noopener" class="pedidosya-btn" id="pedidosya-cta">
+          <img src="img/pedidosya.png" alt="Pedir en PedidosYa" class="pedidosya-logo-btn" />
+          <span>Pedir ahora</span>
+        </a>
+      </div>
+      <div class="delivery-visual">
+        <div class="delivery-card">
+          <img src="img/pedidosya.png" alt="PedidosYa — Delivery de Starbucks Bolivia" class="pedidosya-card-img" />
+          <div class="delivery-card-info">
+            <div class="delivery-store">
+              <img src="img/logo-starbucks.png" alt="Starbucks" class="delivery-sbux-logo" />
+              <div>
+                <strong>Starbucks Bolivia</strong>
+                <p>Av. La Salle, Santa Cruz</p>
+              </div>
+            </div>
+            <div class="delivery-time-row">
+              <div class="delivery-chip">🕐 ~30 min</div>
+              <div class="delivery-chip">⭐ 4.9</div>
+              <div class="delivery-chip">🛵 Disponible</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ========== FOOTER ========== -->
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-brand">
         <div class="footer-logo">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="50" height="50">
-            <circle cx="100" cy="100" r="98" fill="#00704A"/>
-            <circle cx="100" cy="100" r="88" fill="none" stroke="white" stroke-width="2"/>
-            <ellipse cx="100" cy="105" rx="32" ry="38" fill="white"/>
-            <circle cx="88" cy="98" r="4" fill="#00704A"/>
-            <circle cx="112" cy="98" r="4" fill="#00704A"/>
-            <path d="M88 112 Q100 122 112 112" stroke="#00704A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <path d="M68 85 L80 68 L100 78 L120 68 L132 85" fill="white" stroke="white" stroke-width="1"/>
-            <path d="M68 108 Q55 125 60 148 Q75 140 85 128" fill="white"/>
-            <path d="M132 108 Q145 125 140 148 Q125 140 115 128" fill="white"/>
-          </svg>
+          <img src="img/logo-starbucks.png" alt="Starbucks Bolivia" class="footer-logo-img" />
         </div>
         <p>Inspirando y nutriendo el espíritu humano; una persona, una taza y una comunidad a la vez.</p>
       </div>
@@ -443,7 +477,8 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Starbucks Bolivia. Todos los derechos reservados. | Implementado con el Patrón de Diseño <strong>Decorator</strong></p>
+      <p>© 2025 Starbucks Bolivia. Todos los derechos reservados. | Implementado con el Patrón de Diseño
+        <strong>Decorator</strong></p>
     </div>
   </footer>
 
@@ -477,4 +512,5 @@
 
   <script src="app.js"></script>
 </body>
+
 </html>
