@@ -286,7 +286,7 @@ npx serve .
 
 ## 👤 Autor
 
-Desarrollado como proyecto académico para demostrar el **Patrón de Diseño Decorator** del catálogo GoF usando una aplicación web real y atractiva.
+Desarrollado por el Universitario: Ronald Augusto Rodriguez Serrano como proyecto académico para demostrar el **Patrón de Diseño Decorator** del catálogo GoF usando una aplicación web real y atractiva para la materia Ingeniería de Software con el Ing. Eivy Pereira.
 
 **Referencia:** [Starbucks Bolivia](https://www.sbuxbolivia.com/) — Av. La Salle, Santa Cruz de la Sierra, Bolivia 🇧🇴
 
